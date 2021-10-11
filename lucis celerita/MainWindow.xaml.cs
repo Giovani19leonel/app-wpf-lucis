@@ -38,28 +38,23 @@ namespace lucis_celerita
             if (distancia1 > distancia2)
             {
                 distanciatotal = distancia1 - distancia2;
-
-
                 tempoemsegundo = distanciatotal / lux;
 
-
                 TimeSpan time = TimeSpan.FromSeconds(tempoemsegundo);
-                DateTime dateTime = DateTime.Today.Add(time);
-                string displayTime = dateTime.ToString("hh:mm:tt");
-                txtOutputvalor.Text = Convert.ToString(dateTime);
+                    DateTime dateTime = DateTime.Today.Add(time);
+                        string displayTime = dateTime.ToString("hh:mm:tt");
+                            txtOutputvalor.Text = Convert.ToString(dateTime);
             }
             else if (distancia2 > distancia1)
             {
                 distanciatotal = distancia2 - distancia1;
-
-
                 tempoemsegundo = distanciatotal / lux;
 
 
-                 TimeSpan time = TimeSpan.FromSeconds(tempoemsegundo);
-                DateTime dateTime = DateTime.Today.Add(time);
-                string displayTime = dateTime.ToString("hh:mm:tt");
-                txtOutputvalor.Text = Convert.ToString(dateTime);
+                TimeSpan time = TimeSpan.FromSeconds(tempoemsegundo);
+                    DateTime dateTime = DateTime.Today.Add(time);
+                        string displayTime = dateTime.ToString("hh:mm:tt");
+                            txtOutputvalor.Text = Convert.ToString(dateTime);
 
             }
 
